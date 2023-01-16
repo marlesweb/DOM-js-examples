@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo Open</title>
+</head>
+<body>
+    <section>
+        <article>
+            <button type="button" name="abrir" onclick="abrir('abrir')">Abrir ventana</button>
+            <button type="button" name="cerrar" onclick="abrir('cerrar')">cerrar ventana</button>
+        </article>
+        <aside>
+
+        </aside>
+    </section>
+
+
+    <script> 
+     // parametros del ,metodo open window.open("url ventana" - "tamaño" , anchura altura y posicionamiento)
+
+    let miVentana;
+
+     function abrir(){
+    miVentana = window.open("http://milanuncios.com", "ventanal", "width=500px, height=300px, top=300px left=500px");
+     }
+    </script>
+    
+    
+    
+    <script>
+    // para cerrar la ventana
+     function cerrar(){
+     miVentana.close();
+    }
+    </script> 
+    
+    //en una funcion los metodos anteriores
+    
+    <script>
+    let miVentana;
+
+    function abrir(estado){ 
+    if(estado =="abrir"){
+    miVentana = window.open("http://milanuncios.com", "ventanal", "width=500px, height=300px, top=300px left=500px");
+    }
+   else{
+    miVentana.close();
+    }
+    }
+    
+    //abrir la ventana y escribir elgo en ella
+    </script>
+    let miVentana;
+    function abrir(){
+    miVentana = window.open(" ", "ventanal", "width=500px, height=300px, top=300px left=500px");
+    miVentana.document.write("Hola se aceptan pagos en especies")
+    }
+    <script>
+    </script>
+</body>
+</html>
